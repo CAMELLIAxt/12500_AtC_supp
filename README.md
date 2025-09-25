@@ -27,7 +27,7 @@ This script uses annotator comparisons on the Reading Level data as input, aggre
 This set of experiments evaluates the robustness of the AtC framework under various forms of image corruption.
 
 1.  **Prepare Data for Aggregation:** Run `prepare_matlab_data.py` to format the raw user judgments from `Datas/Dots-activity` for the rank aggregation stage.
-2.  **Perform Rank Aggregation (Stage 1):** Use the MATLAB script `rebuttal_new_1.m` to perform the rank aggregation. This will produce the consensus ranking scores ($s^*$) from human judgments. Ensure the output score files are placed in a results directory (e.g., `RA_result_matlab`).
+2.  **Perform Rank Aggregation (Stage 1):** Use the MATLAB script `Rank_aggregate.m` to perform the rank aggregation. This will produce the consensus ranking scores ($s^*$) from human judgments. Ensure the output score files are placed in a results directory (e.g., `RA_result_matlab`).
 3.  **Generate Objective Scores ($s_p$):** Run `sp_generator.py` to generate the objective model scores. You can configure this script to apply different types of global or localized image corruption (blur, noise, whiteout).
 4.  **Run Robustness Analysis:** The various experiment scripts (e.g., `localized_damage_experiment.py`, `BLUR_experiment.py`) take the outputs from the previous steps to perform the AtC calibration (Stage 2) across a range of damage intensities. These scripts generate the final data files containing evaluation metrics (like Kendall's Tau) that compare $s^*$, $s_p$, and the final calibrated score $\hat{s}$.
 
