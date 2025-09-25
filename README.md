@@ -1,7 +1,6 @@
 # README
 
-This repository contains the code and data for the Aggregate-then-Calibrate (AtC) framework, a two-stage method that combines human judgments with predictive models to produce calibrated scores. In AtC, stage 1 aggregates multiple annotators’ pairwise comparisons into a consensus ranking (modeling each annotator’s reliability), and stage 2 calibrates a model’s raw scores so that they respect the human-derived ranking (using isotonic regression). By combining the ordinal information (from humans) and the scoring scale (from the model), AtC produces final scores that align with human consensus while leveraging model consistency. You can also check the online [anonymous git repo](https://anonymous.4open.science/r/23845_AtC_supp-838E/) .
-
+This repository contains the code and data for the Aggregate-then-Calibrate (AtC) framework, a two-stage method that combines human judgments with predictive models to produce calibrated scores. In AtC, stage 1 aggregates multiple annotators’ pairwise comparisons into a consensus ranking (modeling each annotator’s reliability), and stage 2 calibrates a model’s raw scores so that they respect the human-derived ranking (using isotonic regression). By combining the ordinal information (from humans) and the scoring scale (from the model), AtC produces final scores that align with human consensus while leveraging model consistency. 
 ## Datasets
 
 We include two semi-synthetic datasets used in our experiments. In each case the “ground truth” scores are known, and we simulate the imperfect model prediction:
