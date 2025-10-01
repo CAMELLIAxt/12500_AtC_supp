@@ -4,7 +4,7 @@ This repository contains the code and data for the Aggregate-then-Calibrate (AtC
 
 ## Datasets
 
-We include two semi-synthetic datasets used in our experiments. In each case the “ground truth” scores are known, and we simulate the imperfect model prediction:
+We include two datasets used in our experiments. In each case the “ground truth” scores are known, and we simulate the imperfect model prediction:
 
 - Reading Level (semi-synthetic): This dataset contains pairwise comparisons of text documents based on reading difficulty. The dataset includes 490 documents with known reading levels, serving as ground truth difficulty scores. A total of 624 annotators provided 12728 pairwise judgments, with each comparison indicating which document is easier to read. The dataset structure includes judge information, judgment outcomes (where "A" indicates document A is easier than document B), document identification numbers, and the corresponding reading levels for each document pair.
 
